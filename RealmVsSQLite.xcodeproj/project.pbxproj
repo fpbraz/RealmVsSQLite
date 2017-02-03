@@ -8,15 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BE7DEB0E1E44FE230033A0DD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7DEB0D1E44FE230033A0DD /* DataManager.swift */; };
+		BE8AFA471E4502A600FADFE9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AFA461E4502A600FADFE9 /* Person.swift */; };
+		BE8AFA491E450D2700FADFE9 /* RandomizingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AFA481E450D2700FADFE9 /* RandomizingExtensions.swift */; };
 		BEB9C3591E40258500F3681B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB9C3581E40258500F3681B /* AppDelegate.swift */; };
 		BEB9C35B1E40258500F3681B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB9C35A1E40258500F3681B /* ViewController.swift */; };
 		BEB9C35E1E40258500F3681B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB9C35C1E40258500F3681B /* Main.storyboard */; };
 		BEB9C3601E40258500F3681B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB9C35F1E40258500F3681B /* Assets.xcassets */; };
 		BEB9C3631E40258500F3681B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB9C3611E40258500F3681B /* LaunchScreen.storyboard */; };
+		C4C823ECA2B29E975F8ED6A6 /* Pods_RealmVsSQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE40B6C843F0AEB1AD96E003 /* Pods_RealmVsSQLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A58F9B407ACE9B6B1D4C86F0 /* Pods-RealmVsSQLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmVsSQLite.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmVsSQLite/Pods-RealmVsSQLite.release.xcconfig"; sourceTree = "<group>"; };
 		BE7DEB0D1E44FE230033A0DD /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BE8AFA461E4502A600FADFE9 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BE8AFA481E450D2700FADFE9 /* RandomizingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomizingExtensions.swift; sourceTree = "<group>"; };
 		BEB9C3551E40258500F3681B /* RealmVsSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmVsSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB9C3581E40258500F3681B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEB9C35A1E40258500F3681B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		BEB9C35F1E40258500F3681B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEB9C3621E40258500F3681B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEB9C3641E40258500F3681B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE40B6C843F0AEB1AD96E003 /* Pods_RealmVsSQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmVsSQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4A9093573B289C33A350DF /* Pods-RealmVsSQLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmVsSQLite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmVsSQLite/Pods-RealmVsSQLite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C823ECA2B29E975F8ED6A6 /* Pods_RealmVsSQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B201B7AEE4355DCDEC2530F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A9093573B289C33A350DF /* Pods-RealmVsSQLite.debug.xcconfig */,
+				A58F9B407ACE9B6B1D4C86F0 /* Pods-RealmVsSQLite.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BEB9C34C1E40258500F3681B = {
 			isa = PBXGroup;
 			children = (
 				BEB9C3571E40258500F3681B /* RealmVsSQLite */,
 				BEB9C3561E40258500F3681B /* Products */,
+				4B201B7AEE4355DCDEC2530F /* Pods */,
+				E4A6ADC843DF2EAB627D7D58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +79,22 @@
 				BEB9C3581E40258500F3681B /* AppDelegate.swift */,
 				BEB9C35A1E40258500F3681B /* ViewController.swift */,
 				BE7DEB0D1E44FE230033A0DD /* DataManager.swift */,
+				BE8AFA461E4502A600FADFE9 /* Person.swift */,
+				BE8AFA481E450D2700FADFE9 /* RandomizingExtensions.swift */,
 				BEB9C35C1E40258500F3681B /* Main.storyboard */,
 				BEB9C35F1E40258500F3681B /* Assets.xcassets */,
 				BEB9C3611E40258500F3681B /* LaunchScreen.storyboard */,
 				BEB9C3641E40258500F3681B /* Info.plist */,
 			);
 			path = RealmVsSQLite;
+			sourceTree = "<group>";
+		};
+		E4A6ADC843DF2EAB627D7D58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE40B6C843F0AEB1AD96E003 /* Pods_RealmVsSQLite.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEB9C3671E40258500F3681B /* Build configuration list for PBXNativeTarget "RealmVsSQLite" */;
 			buildPhases = (
+				AE37D0241ADE62C03BED33A9 /* [CP] Check Pods Manifest.lock */,
 				BEB9C3511E40258500F3681B /* Sources */,
 				BEB9C3521E40258500F3681B /* Frameworks */,
 				BEB9C3531E40258500F3681B /* Resources */,
+				7A84AE10C4153EBA9D987509 /* [CP] Embed Pods Frameworks */,
+				DD8A959346F68285A4357237 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +167,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7A84AE10C4153EBA9D987509 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmVsSQLite/Pods-RealmVsSQLite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE37D0241ADE62C03BED33A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD8A959346F68285A4357237 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmVsSQLite/Pods-RealmVsSQLite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEB9C3511E40258500F3681B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BE7DEB0E1E44FE230033A0DD /* DataManager.swift in Sources */,
+				BE8AFA491E450D2700FADFE9 /* RandomizingExtensions.swift in Sources */,
 				BEB9C35B1E40258500F3681B /* ViewController.swift in Sources */,
+				BE8AFA471E4502A600FADFE9 /* Person.swift in Sources */,
 				BEB9C3591E40258500F3681B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +345,7 @@
 		};
 		BEB9C3681E40258500F3681B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4A9093573B289C33A350DF /* Pods-RealmVsSQLite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmVsSQLite/Info.plist;
@@ -274,6 +358,7 @@
 		};
 		BEB9C3691E40258500F3681B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58F9B407ACE9B6B1D4C86F0 /* Pods-RealmVsSQLite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmVsSQLite/Info.plist;
